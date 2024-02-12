@@ -1,9 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%  Code modified by Francisco Vasconcelos from
-%%%%
-%%%%  Drone class, feel free to add functionality as you see fit
-%%%%  Author: Daniel Butters
-%%%%  Date: 16/11/17
+%%%%  Drone class q2
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 classdef Drone_q2 < handle
     properties (Constant)

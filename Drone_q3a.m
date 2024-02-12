@@ -1,9 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%  Code modified by Francisco Vasconcelos from
-%%%%
-%%%%  Drone class, feel free to add functionality as you see fit
-%%%%  Author: Daniel Butters
-%%%%  Date: 16/11/17
+%%%%  Drone class q3a
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 classdef Drone_q3a < handle
     properties (Constant)
@@ -68,7 +64,6 @@ classdef Drone_q3a < handle
 
         % hovering at 5 5 5
         h_duration
-
 
 
     end
@@ -308,19 +303,6 @@ classdef Drone_q3a < handle
             target = full_tar_stack(:,obj.count);
             
             Curr_state = [obj.pos; obj.x_dot; obj.angles; obj.angular_velocity];
-
-            %% Guassian Noise added 3b
-
-%             % noise added to the position 4%
-%             Curr_state(1:3) = Curr_state(1:3) + Curr_state(1:3) .* 0.04 .*randn(3,1);
-% 
-%             % noise added to the linear speed 1%
-%             Curr_state(4:6) = Curr_state(4:6) + Curr_state(4:6) .* 0.01 .*randn(3,1);
-%             % noise added to the orientation 2%  
-%             Curr_state(7:9) = Curr_state(7:9) + Curr_state(7:9) .* 0.02 .*randn(3,1);
-% 
-%             % noise added to the angular speed 0.5%
-%             Curr_state(10:12) = Curr_state(10:12) + Curr_state(10:12) .* 0.005 .* randn(3,1);
 
             state_e = Curr_state - target;
 
